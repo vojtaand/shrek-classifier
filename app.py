@@ -17,7 +17,7 @@ def load_model():
 
 
 st.title("Shrek character classifier")
-st.write("Upload a photo of a Shrek character and the model will tell you which character it is")
+st.write("Upload a photo of a Shrek character and the model will tell you which character it is.")
 
 learn = load_model()
 uploaded = st.file_uploader("Your image", type=["jpg", "jpeg", "png", "webp"])
