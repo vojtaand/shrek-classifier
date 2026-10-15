@@ -16,8 +16,8 @@ def load_model():
     return load_learner(hf_hub_download(REPO_ID, "model.pkl"))
 
 
-st.title("Character from Shrek classifier")
-st.write("Upload a photo of a character from Shrek and the model will tell you which one it is")
+st.title("Shrek character classifier")
+st.write("Upload a photo of a Shrek character and the model will tell you which character it is")
 
 learn = load_model()
 uploaded = st.file_uploader("Your image", type=["jpg", "jpeg", "png", "webp"])
